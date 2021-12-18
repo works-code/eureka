@@ -1,0 +1,11 @@
+server:
+  port: 9091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9091/eureka
+    fetch-registry: false # eureka 서버도 client 역할을 할 수 있기에 false 로 하여 비활성화 한다.
+    register-with-eureka: false # eureka 서버도 client 역할을 할 수 있기에 false 로 하여 비활성화 한다.
+spring:
+  application:
+    name: eureka # application 구분을 위한 이름 설정
